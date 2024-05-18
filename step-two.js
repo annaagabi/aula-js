@@ -87,3 +87,27 @@ function Aprovacao(nota) {
 
 console.log(Aprovacao(8))
 console.log(Aprovacao("Texto")) // Retorna "falso"
+
+function AprovacaoIf(nota) {
+
+    if (typeof (nota) === 'number') {
+        if(nota>7){
+            return 'Aprovado'
+        }
+        if(nota<7 && nota>4){
+            return 'Reprovado'
+        }
+        if(nota<=4){
+            return 'Recuperação'
+        }
+
+    }else{
+        return "Digite um número válido"
+    }
+    
+}
+
+console.log(AprovacaoIf(8))
+console.log(AprovacaoIf(6))
+console.log(AprovacaoIf(4))
+console.log(AprovacaoIf("Texto"))
