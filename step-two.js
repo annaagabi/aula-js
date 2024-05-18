@@ -94,10 +94,10 @@ function AprovacaoIf(nota) {
         if(nota>7){
             return 'Aprovado'
         }
-        if(nota<7 && nota>4){
+        else if(nota<7 && nota>4){
             return 'Reprovado'
         }
-        if(nota<=4){
+        else{
             return 'Recuperação'
         }
 
@@ -111,3 +111,15 @@ console.log(AprovacaoIf(8))
 console.log(AprovacaoIf(6))
 console.log(AprovacaoIf(4))
 console.log(AprovacaoIf("Texto"))
+
+function verificaNome(nome){
+    const stringToArray = nome.split(' ')
+    const primeiroNome = stringToArray[0]
+    const terceiroNome = stringToArray[2]
+    const novoNome =  primeiroNome + ' ' + terceiroNome
+
+    return novoNome
+}
+
+console.log(verificaNome("Anna Gabriela Monteiro"))
+
