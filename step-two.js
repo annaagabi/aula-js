@@ -80,7 +80,7 @@ function Aprovacao(media) {
     // Tem a mesma funcionalidade do if;
     return typeof (media) === 'number' && media > 7 ? "Aprovado" : "Reprovado" // Ternário
     // Verifica se a entrada é de um número
-    // Caso a média seja maior que 7 ele mostrará "aprovado", caso não seja ele mostrará reprovado
+    // Caso a média seja maior que 7 ele mostrará "aprovado", caso não seja ele mostrará "reprovado"
     // O ":" é equivalenete ao "senão"
     // O ternário só serve caso haja apenas duas alternativas
 }
