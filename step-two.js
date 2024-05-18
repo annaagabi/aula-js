@@ -1,4 +1,3 @@
-
 /*  NODE (terminal):
     O node é o interpretador de código
     node + 'nome do arquivo'
@@ -7,10 +6,10 @@
 
 // FUNÇÂO
 
-function Soma(n1, n2){ // dentro dos parenteses vão os parâmentros
-    return n1+n2
+function Soma(n1, n2) { // dentro dos parenteses vão os parâmentros
+    return n1 + n2
 }
-console.log('O valor da soma é:', Soma(10,15)) // dentro dos parentese vão os valores dos parâmetros
+console.log('O valor da soma é:', Soma(10, 15)) // dentro dos parentese vão os valores dos parâmetros
 
 // const timesImg = {
 //         saoPaulo: 'img',
@@ -19,23 +18,25 @@ console.log('O valor da soma é:', Soma(10,15)) // dentro dos parentese vão os 
 
 // src={time.defineTime(saoPaulo)}
 
-function Subtracao(n1,n2){
-    return n1-n2
+function Subtracao(n1, n2) {
+    return n1 - n2
 }
-console.log('O valor da subtração é:', Subtracao(20,15))
+console.log('O valor da subtração é:', Subtracao(20, 15))
 
-function Multiplicacao(n1,n2){
-    return n1*n2
+function Multiplicacao(n1, n2) {
+    return n1 * n2
 }
-console.log('O valor da multiplicacao é:', Multiplicacao(10,2))
+console.log('O valor da multiplicacao é:', Multiplicacao(10, 2))
 
-function Divisao(n1,n2){
-    return n1/n2
+function Divisao(n1, n2) {
+    return n1 / n2
 }
-console.log('O valor da subtração é:', Divisao(10,5))
+console.log('O valor da subtração é:', Divisao(10, 5))
 
-function ValidaNome(name){
-    if(name.length > 3){ // Valida se o nome possui mais de 3 caracteres
+function ValidaNome(name) { // Valida se o nome possui mais de 15 caracteres
+    if (name.length > 15) {
+        return "É um dicionário"
+    } else if (name.length > 3) { // Valida se o nome possui mais de 3 caracteres
         return "Nome válido"
 
     } else {
@@ -43,3 +44,21 @@ function ValidaNome(name){
     }
 }
 console.log(ValidaNome('Anna'))
+
+function ValidaCPF(name) { 
+    switch (name) { // Retorna algo de acordo com o parametro
+        case "Anna": // Válida o parâmetro recebido
+            return "123456789"
+
+        case "Lucas":
+            return "456782135"
+
+        case "Carla":
+            return "123674569"
+
+        default: // Caso nenhum caso seja verdadeiro
+            return "Nome não cadastrado"
+    }
+}
+console.log(ValidaCPF('Anna'))
+console.log(ValidaCPF('Carla'))
