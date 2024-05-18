@@ -113,12 +113,8 @@ console.log(AprovacaoIf(4))
 console.log(AprovacaoIf("Texto"))
 
 function verificaNome(nome){
-    const stringToArray = nome.split(' ')
-    const primeiroNome = stringToArray[0]
-    const terceiroNome = stringToArray[2]
-    const novoNome =  primeiroNome + ' ' + terceiroNome
-
-    return novoNome
+    const stringToArray = nome.split(' ') 
+    return stringToArray[0] + ' ' + stringToArray[2]
 }
 
 console.log(verificaNome("Anna Gabriela Monteiro"))
