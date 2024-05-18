@@ -45,7 +45,7 @@ function ValidaNome(name) { // Valida se o nome possui mais de 15 caracteres
 }
 console.log(ValidaNome('Anna'))
 
-function ValidaCPF(name) { 
+function ValidaCPF(name) {
     switch (name) { // Retorna algo de acordo com o parametro
         case "Anna": // Válida o parâmetro recebido
             return "123456789"
@@ -62,3 +62,27 @@ function ValidaCPF(name) {
 }
 console.log(ValidaCPF('Anna'))
 console.log(ValidaCPF('Carla'))
+
+function addSr(name) { // interpolar texto em uma variável
+
+    if (typeof (name) === 'string') {
+        return `Sr(a). ${name}`
+
+    } else {
+        return "Digite um nome válido"
+    }
+
+}
+console.log(addSr("João"))
+
+function Aprovacao(media) {
+
+    // Tem a mesma funcionalidade do if;
+    return typeof (media) === 'number' && media > 7 ? "Aprovado" : "Reprovado" // Ternário
+    // Verifica se a entrada é de um número
+    // Caso a média seja maior que 7 ele mostrará "aprovado", caso não seja ele mostrará reprovado
+    // O ":" é equivalenete ao "senão"
+    // O ternário só serve caso haja apenas duas alternativas
+}
+
+console.log(Aprovacao(8))
