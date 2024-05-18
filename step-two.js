@@ -75,10 +75,10 @@ function addSr(name) { // interpolar texto em uma variável
 }
 console.log(addSr("João"))
 
-function Aprovacao(media) {
+function Aprovacao(nota) {
 
     // Tem a mesma funcionalidade do if;
-    return typeof (media) === 'number' && media > 7 ? "Aprovado" : "Reprovado" // Ternário
+    return (typeof (nota) === 'number') && (nota > 7 ? "Aprovado" : "Reprovado") // Ternário
     // Verifica se a entrada é de um número
     // Caso a média seja maior que 7 ele mostrará "aprovado", caso não seja ele mostrará "reprovado"
     // O ":" é equivalenete ao "senão"
@@ -86,3 +86,4 @@ function Aprovacao(media) {
 }
 
 console.log(Aprovacao(8))
+console.log(Aprovacao("Texto")) // Retorna "falso"
