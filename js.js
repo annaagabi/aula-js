@@ -92,3 +92,17 @@ const namer = "Lucas do Espirito Santo Correa"
 const splitNamer =namer.split(' ')
 
 console.log(splitNamer[0], splitNamer[splitNamer.length - 1])
+
+const number = [1, 2, 3, 4, 5]
+
+const doubleNumber = number.map((num) => {
+    return num *2
+})
+
+console.log(doubleNumber)
+
+// Default
+// function (){}
+
+// Arrow Function
+// () => {}
